@@ -1256,7 +1256,7 @@ function GetAPIDetail ([String] $Request) {
             'Backup-CVVirtualMachine' = @{
         
                 Description = 'Starts backup job for specified virtual machine'
-                Endpoint    = '/v2/vsa/vm/{vmGUID}/backup'
+                Endpoint    = '/v2/vsa/vm/{vmGUID}/backup?backupLevel={backupType}'
                 Method      = 'Post'
                 Body        = ''
             }
